@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 :root{
-    --color1:#3498db;
-    --color2:#e0e0e0;
+    --color1:rgb(0, 214, 0);
+    --color2:rgb(214, 255, 214);
+    --color3:rgb(11, 255, 11);
 }
 
 * {
     box-sizing: border-box;
+}
+
+h3{
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
 }
 
 body{
@@ -76,15 +83,26 @@ body{
 }
 
 .btn {
-    background-color: var(--color1);
-    color: white;
-    border: 0px;
-    border-radius: 6px;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: var(--color3);
+    color: black;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 5px;
     cursor: pointer;
     font-family: inherit;
     padding: 8px 30px;
     margin: 5px;
     font-size: 14px;
+}
+
+.btn:hover{
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    transition: 0.5s ease;
 }
 
 .btn:active {
